@@ -75,7 +75,7 @@ So in this example we used 2 language specific buildpacks Node.JS (Requires pack
 
 **Note**: Don't forgot to generate Gemfile.lock (It can be done by `bundle install`).
 
-#### How to handle Pull Requests?
+#### How to handle Pull Requests for different codebase?
 
 So this is tricky part, you need to add or update `APP_BASE` config var at the [pipeline's setting](https://devcenter.heroku.com/articles/github-integration-review-apps#sensitive-config-vars) before creating Review App, which will be injected into the review app when it is created and buildpack will identify which codebase to consider.
 
