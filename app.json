@@ -20,12 +20,6 @@
       },
       { 
           "url": "heroku-community/nginx"          
-      },
-      { 
-          "url": "heroku/nodejs"          
-      },
-      { 
-          "url": "heroku/nodejs"          
-      }
+      }     
     ]
   }
