@@ -36,9 +36,19 @@ http {
     location / {
         proxy_pass https://example.com/;            
         proxy_set_header x-forwarded-host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Host example.com;
+        proxy_set_header X-Real-IP $remote_addr;        
     }
 
+    location /node {
+       proxy_pass <%= ENV["NODE_APP"] %>;            
+       proxy_set_header x-forwarded-host $host;
+       proxy_set_header X-Real-IP $remote_addr;       
+    }
+
+    location /ruby {
+      proxy_pass <%= ENV["RUBY_APP"] %>;            
+       proxy_set_header x-forwarded-host $host;
+       proxy_set_header X-Real-IP $remote_addr;
+    }
   }
 }
