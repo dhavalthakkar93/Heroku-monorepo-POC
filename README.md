@@ -87,5 +87,5 @@ So this is tricky part, you need to add or update `APP_BASE` config var at the [
 Dhaval Thakkar (dthakkar@heroku.com)
 
 # Special Thanks
-Special thanks to **Andrew Gwozdziewycz**, **Cyril David** and **Lincoln Stoll** for creating awesome buildpack ([heroku-buildpack-monorepo](https://github.com/lstoll/heroku-buildpack-monorepo)) to handle monorepo structure on Heroku.
+Special thanks to **Andrew Gwozdziewycz**, **Cyril David** and **Lincoln Stoll** for creating awesome [buildpack](https://github.com/lstoll/heroku-buildpack-monorepo) to handle monorepo structure on Heroku.
 
