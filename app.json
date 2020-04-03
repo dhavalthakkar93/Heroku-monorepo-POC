@@ -17,6 +17,15 @@
     "buildpacks": [
       {
         "url": "https://github.com/lstoll/heroku-buildpack-monorepo"
+      },
+      { 
+          "url": "heroku-community/nginx"          
+      },
+      { 
+          "url": "heroku/nodejs"          
+      },
+      { 
+          "url": "heroku/nodejs"          
       }
     ]
   }
