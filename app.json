@@ -1,0 +1,31 @@
+{
+    "name": "Heroku Mono Repo",   
+    "repository": "https://github.com/dhavalthakkar93/Heroku-monorepo-POC",            
+    "env": {
+      "APP_BASE": {
+          "required": true
+      }
+    },       
+    "addons": [     
+      {
+        "plan": "heroku-postgresql",
+        "options": {
+          "version": "9.5"
+        }
+      }
+    ],
+    "buildpacks": [
+      {
+        "url": "https://github.com/lstoll/heroku-buildpack-monorepo"
+      },
+      { 
+          "url": "heroku-community/nginx"          
+      },
+      {
+        "url": "heroku/nodejs"    
+      },
+      {
+        "url": "heroku/ruby"
+      }     
+    ]
+  }
